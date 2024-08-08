@@ -1,0 +1,16 @@
+all:
+  children:
+    servergroup:
+      children:
+        host1:
+          hosts:
+            host1:
+              ansible_host: 3.76.37.197
+              ansible_ssh_private_key_file: /home/newbil/.ssh/my-instance-1_key.pem
+              ansible_user: ubuntu
+        host2:
+          hosts:
+            host2:
+              ansible_host: 18.184.216.37
+              ansible_ssh_private_key_file: /home/newbil/.ssh/my-instance-1_key.pem
+              ansible_user: ubuntu
